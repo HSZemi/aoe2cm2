@@ -1,3 +1,3 @@
 #! /bin/bash
 
-npm run build && cp -r build/images ~/html/ && cp -r build/static ~/html/ && supervisorctl restart aoe2cm2
+npm run build && cp -r build/images ~/cm3/ && cp -r build/static ~/cm3/ && supervisorctl restart aoe3cm2

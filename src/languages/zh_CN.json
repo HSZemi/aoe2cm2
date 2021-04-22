@@ -43,6 +43,13 @@
     "HIDDEN": "",
     "RANDOM": "随机"
   },
+  "aoe3civs": {
+    "HIDDEN_PICK": "",
+    "HIDDEN_BAN": "",
+    "HIDDEN_SNIPE": "",
+    "HIDDEN": "",
+    "RANDOM": "随机"
+  },
   "messages": {
     "finished": "结束。",
     "waitingForGuestReady": "等待受邀者准备",

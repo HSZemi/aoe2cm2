@@ -73,7 +73,7 @@ class DraftOptionPanel extends React.Component<IProps, IState> {
                 }
                 image = <img className={'directional'} src={imageSrc} alt={draftOptionName} key={imageKey}/>;
             }
-            draftOptionKey = 'civs.' + draftOptionName;
+            draftOptionKey = 'aoe3civs.' + draftOptionName;
             if (Util.isTechnicalDraftOption(draftOption)) {
                 textClass += ' is-hidden';
             }

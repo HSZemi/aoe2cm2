@@ -4,12 +4,14 @@ import {Assert} from "../util/Assert";
 import Civilisation from "./Civilisation";
 import DraftOption from "./DraftOption";
 import {Util} from "../util/Util";
+import Aoe3Civilisation from "./Aoe3Civilisation";
 
 class Preset {
 
     public static readonly EMPTY: Preset = new Preset('', [], []);
 
     public static readonly NEW: Preset = new Preset('', Civilisation.ALL, []);
+    public static readonly AOE3_NEW: Preset = new Preset('', Aoe3Civilisation.ALL, []);
 
     public static readonly SAMPLE: Preset = new Preset('Default Preset', Civilisation.ALL, [
         Turn.HOST_GLOBAL_BAN,

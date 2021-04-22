@@ -1,5 +1,5 @@
 import * as React from "react";
-import {withRouter, NavLink, Route, Switch} from "react-router-dom";
+import {NavLink, Route, Switch, withRouter} from "react-router-dom";
 import {RouteComponentProps} from "react-router";
 import Practice from "./Practice";
 import Presets from "./Presets";
@@ -8,10 +8,10 @@ import Index from "./Index";
 import Spectate from "./Spectate";
 import {Trans, withTranslation, WithTranslation} from "react-i18next";
 import Modal from "../../containers/Modal";
-import PresetEditor from "../PresetEditor/PresetEditor";
 import NotFound404 from "../404";
 import HowItWorks from "./HowItWorks";
 import API from "./API";
+import Aoe3PresetEditor from "../PresetEditor/Aoe3PresetEditor";
 
 class Menu extends React.Component<WithTranslation, object> {
     public render() {
@@ -20,10 +20,10 @@ class Menu extends React.Component<WithTranslation, object> {
                 <div className="container is-desktop">
                     <Modal/>
                     <div className="has-text-centered pb-5">
-                        <img src="/images/aoe2cm2.png" alt="AoE II - Captains Mode Logo"/>
+                        <img src="/images/aoe2cm2.png" alt="AoE III - Captains Mode Logo"/>
                     </div>
                     <div className="has-text-centered">
-                        <h1 className="title is-hidden">Age of Empires II</h1>
+                        <h1 className="title is-hidden">Age of Empires III</h1>
                         <h2 className="subtitle is-hidden">Captains Mode</h2>
                     </div>
                     <div className="tabs is-centered">
@@ -38,7 +38,7 @@ class Menu extends React.Component<WithTranslation, object> {
                     <Switch>
                         <Route exact path="/" component={Index}/>
                         <Route path="/presets" component={Presets}/>
-                        <Route path="/preset/create" component={PresetEditor}/>
+                        <Route path="/preset/create" component={Aoe3PresetEditor}/>
                         <Route path="/preset/:id" component={Preset}/>
                         <Route path="/spectate" component={Spectate}/>
                         <Route path="/practice" component={Practice}/>

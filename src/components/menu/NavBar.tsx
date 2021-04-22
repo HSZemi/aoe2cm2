@@ -1,7 +1,6 @@
 import * as React from "react";
 import UsernameSelector from "../../containers/UsernameSelector";
 import {Trans, WithTranslation, withTranslation} from "react-i18next";
-import IconStyleSelector from "../../containers/IconStyleSelector";
 import ColorSchemeToggle from "../../containers/ColorSchemeToggle";
 import {Link} from "react-router-dom";
 import LocaleSelector from "./LocaleSelector";
@@ -11,7 +10,7 @@ class NavBar extends React.Component<WithTranslation, object> {
         return (
             <nav className="navbar is-flex-touch" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
-                    <h1 className="navbar-item"><Link to={"/"}>Captains Mode for Age of Empires II</Link></h1>
+                    <h1 className="navbar-item"><Link to={"/"}>Captains Mode for Age of Empires III</Link></h1>
                 </div>
                 <div className="navbar-end is-flex-touch">
                     <div className="navbar-item">
@@ -27,13 +26,6 @@ class NavBar extends React.Component<WithTranslation, object> {
                     <div className="navbar-item">
                         <div className={'buttons'}>
                             <ColorSchemeToggle/>
-                        </div>
-                    </div>
-                    <div className="navbar-item">
-                        <div className={'buttons has-addons'}>
-                            <IconStyleSelector iconStyle={'units'} displayString={this.props.t('navbar.showUnits')}/>
-                            <IconStyleSelector iconStyle={'emblems'} displayString={this.props.t('navbar.showEmblems')}/>
-                            <IconStyleSelector iconStyle={'units-animated'} displayString={this.props.t('navbar.showUnitsAnimated')}/>
                         </div>
                     </div>
                 </div>

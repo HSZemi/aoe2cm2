@@ -6,7 +6,7 @@ import NewDraftButton from "../NewDraftButton";
 import CustomisePresetButton from "../../containers/CustomisePresetButton";
 import CopyableInput from "../draft/CopyableInput";
 import {PresetOptionCheckbox} from "../PresetEditor/PresetOptionCheckbox";
-import Civilisation from "../../models/Civilisation";
+import Aoe3Civilisation from "../../models/Aoe3Civilisation";
 
 interface IState {
     preset?: ModelPreset;
@@ -35,7 +35,7 @@ class Preset extends React.Component<object, IState> {
         if (this.state.preset !== undefined) {
 
             const presetCivilisations = this.state.preset.options;
-            const civs = Civilisation.ALL.map((value: Civilisation, index: number) =>
+            const civs = Aoe3Civilisation.ALL.map((value: Aoe3Civilisation, index: number) =>
                 <PresetOptionCheckbox presetOptions={presetCivilisations} value={value}
                                       key={index}
                                       disabled={true}/>);

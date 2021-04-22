@@ -19,10 +19,10 @@ class Footer extends React.Component<object, object> {
                             <Link to="/api">API</Link>
                         </p>
                         <p>
-                            Age of Empires II &copy; Microsoft Corporation. <b>Captains Mode for Age of Empires
-                            II</b> was created under Microsoft's "<a href="https://www.xbox.com/en-us/developers/rules"
+                            Age of Empires III &copy; Microsoft Corporation. <b>Captains Mode for Age of Empires
+                            III</b> was created under Microsoft's "<a href="https://www.xbox.com/en-us/developers/rules"
                                                                      rel='nofollow'>
-                            Game Content Usage Rules</a>" using assets from Age of Empires II, and it is not endorsed by
+                            Game Content Usage Rules</a>" using assets from Age of Empires II and III, and it is not endorsed by
                             or affiliated with Microsoft.
                         </p>
                     </div>
