@@ -13,6 +13,7 @@ import NotFound404 from "../404";
 import HowItWorks from "./HowItWorks";
 import API from "./API";
 
+
 class Menu extends React.Component<WithTranslation, object> {
     public render() {
         return (
